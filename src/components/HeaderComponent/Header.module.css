@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'helvetica';
+  src: url('../../assets/helvetica/Helvetica.otf');
+}
+@font-face {
+  font-family: 'TT travels';
+  src: url("../../assets/tt_travels/TT.otf");
+}
+@font-face {
+  font-family: 'Inter';
+  src: url("../../assets/Inter/static/Regular.ttf");
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 40px;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 329px;
+  max-height: 34px;
+  font-family: helvetica;
+
+}
+
+.headerLogo{
+  max-width: 157px;
+  max-height: 32px;
+
+}
+
+.header__partner-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  color: #646562;
+  font-weight: 600;
+}
+
+.header__right {
+  text-align: right;
+  max-width: 140px;
+  max-height: 38px;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.header__phone {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1A1A1A;
+  font-family: 'TT travels';
+  font-weight: 500;
+
+}
+.header__phone-layout {
+  width: 140px;
+  height: auto; 
+  border: 0.5px solid #000; 
+  opacity: 0.1; 
+  transform: rotate(0deg); 
+}
+
+.header__working-status {
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+  gap: 5px;
+  font-size: 16px;
+  color: #A0A747;
+  margin-top: 2px;
+  font-family: 'Inter';
+  font-weight: 500;
+}
+
+.header__dot {
+  min-width: 4px;
+  min-height: 4px;
+  border-radius: 50%;
+  background-color: #A0A747;
+  margin-top: 3px;
+}

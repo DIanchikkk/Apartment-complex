@@ -25,10 +25,10 @@ function HeroBanner() {
 
       <div className={styles['hero-banner__labels']}>
         <div className={styles['hero-banner__label']}>
-          1 очередь — <span className={styles['hero-banner__year']}>2022</span>
+          1 очередь <span className={styles['hero-banner__year']}>2022</span>
         </div>
         <div className={styles['hero-banner__label']}>
-          2 очередь — <span className={styles['hero-banner__year']}>2023</span>
+          2 очередь <span className={styles['hero-banner__year']}>2023</span>
         </div>
       </div>
     </section>

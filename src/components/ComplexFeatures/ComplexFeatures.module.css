@@ -1,0 +1,68 @@
+  
+   
+@font-face {
+    font-family: 'TT travels';
+    src: url("../../assets/tt_travels/TT.otf");
+  }
+  @font-face {
+    font-family: 'helvetica';
+    src: url('../../assets/helvetica/Helvetica.otf');
+  }
+
+  /* ComplexFeatures */
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .features__item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: default;
+  }
+  
+  .features__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .features__label {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    color: #FFFFFF;
+    text-shadow: 0 0 5px rgba(0,0,0,0.7);
+    font-family: 'TT travels';
+  }
+  
+  .features__main {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 2px;
+    background-color: #00000099;
+    backdrop-filter: blur(6px);
+    padding: 4px 16px;
+    max-width: 118px;
+    border-radius: 5px;
+    font-family: 'TT travels';
+  }
+  
+  .features__sub {
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #00000099;
+    backdrop-filter: blur(6px);
+    padding: 6px 14px;
+    border-radius: 5px;
+    font-family: 'helvetica';
+  }
+  

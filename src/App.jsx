@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection/HeroSection';
 import HeroBanner from './components/HeroBanner/HeroBanner';
 import ComplexFeatures from './components/ComplexFeatures/ComplexFeatures';
 import ViewSlider from './components/ViewSlider/ViewSlider';
+import PresentationSignUpForm from './components/PresentationSignUpForm/PresentationSignUpForm';
 
 
 function App() {
@@ -18,6 +19,10 @@ function App() {
          <ComplexFeatures />
       </div>
       <ViewSlider />
+      <div className='page__form'>
+         <PresentationSignUpForm/>
+      </div>
+
   
       {/* <MainContent /> 
       <Footer /> */}

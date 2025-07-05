@@ -1,6 +1,12 @@
+.page {
+    background-color: #F5F3F0;
+}
 .page__intro{
     margin: 20px 60px 10px;
 }
 .page__features{
+    margin: 40px 200px 50px;
+}
+.page__form {
     margin: 40px 200px 50px;
 }

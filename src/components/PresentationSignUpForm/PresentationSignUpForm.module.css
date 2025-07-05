@@ -1,0 +1,233 @@
+@font-face {
+  font-family: 'TT travels';
+  src: url('/assets/tt_travels/TT.otf');
+}
+@font-face {
+  font-family: 'TT travels bold';
+  src: url('/assets/tt_travels/bold.otf');
+}
+@font-face {
+  font-family: 'helvetica';
+  src: url('/assets/helvetica/Helvetica.otf');
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  max-height: 600px;
+  max-width: 1700px;
+  margin: 0 auto;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  margin-top: 100px;
+}
+
+
+.card {
+  display: flex;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+  margin: 0;
+  position: relative;
+  max-height: 600px;
+  gap: 50px;
+}
+
+.left {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fffcfc;
+  min-width: 0;
+}
+
+.heading {
+  margin-bottom: 30px;
+}
+
+.subheading {
+  font-size: 16px;
+  color: #773844;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-family: 'TT travels bold';
+  text-align: center;
+
+}
+
+.title {
+  font-size: 35px;
+  font-weight: bold;
+  color: #1a1a1a;
+  font-family: 'TT travels bold';
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;         
+  flex-shrink: 0; 
+}
+
+.bullet {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #1a1a1a;
+  font-family: 'helvetica';
+  min-width: 100px;
+  margin-bottom: 20px;
+}
+.bullet p {
+  margin: 2px;
+}
+.arrow {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  color: #773844;
+}
+
+.separator {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 20px 0px 20px;
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #1A1A1A;
+  font-family: 'helvetica';
+}
+
+.inputGroup {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+
+.input {
+  flex: 1;
+  padding: 16px 14px;
+  border: 1px solid #E6E2DE;
+  background-color: #F5F3F0;
+  border-radius: 12px;
+  font-size: 14px;
+  height: 40px;
+  box-sizing: border-box;
+  max-width: 200px;
+  color: #1A1A1A;
+}
+.input:focus {
+  outline: none;
+  border-color: #773844;
+  background-color: #fff;
+}
+
+
+.button {
+  background-color: #773844;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  width: 250px;
+  position: absolute;
+  z-index: 100;
+  left: 29%;
+
+}
+
+
+.button:hover {
+  background-color: #646562;
+}
+
+.agreement {
+  font-size: 12px;
+  color: #646562;
+  font-family: 'helvetica';
+
+}
+
+.link {
+  color: #646562;
+  text-decoration: underline;
+}
+.link:hover {
+  color: #773844;
+}
+.right {
+  background-color: #fffcfc;
+  display: flex;
+  justify-content: center;
+  width: 320px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.imageWrapper {
+  position: relative; 
+  width: 350px;
+  max-height: none; 
+  overflow: visible;
+  margin-top: 60px;
+}
+
+.pattern {
+  width: 800px;
+  height: auto;
+  position: absolute;
+  top: -50px;
+  left: -150px;
+  z-index: 1;
+}
+
+.person {
+  position: relative;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  z-index: 100;
+}
+
+.personInfo {
+  position: absolute;
+  top: 65%;
+  left: 30%;
+  text-align: left;
+  transform: translateX(-50%);
+  z-index: 110; 
+}
+.name {
+  font-size: 16px;
+  color: #ffffff;
+  font-family: 'TT travels bold';
+  line-height: 1.1;
+  margin-bottom: 4px;
+
+}
+
+.role {
+  font-size: 14px;
+  color: #ddd;
+  font-family: 'helvetica';
+  line-height: 1.2;
+  margin-top: 0;
+}

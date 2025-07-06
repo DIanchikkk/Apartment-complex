@@ -1,4 +1,9 @@
-.page {
+@font-face {
+    font-family: 'TT travels bold';
+    src: url('/assets/tt_travels/bold.otf');
+  }
+
+body {
     background-color: #F5F3F0;
 }
 .page__intro{
@@ -10,3 +15,12 @@
 .page__form {
     margin: 40px 200px 50px;
 }
+.page__clusters-title {
+    font-size: 54px;
+    color: #1A1A1A;
+    font-family: 'TT travels bold';
+    padding: 0;
+    text-align: center;
+    margin-top: 80px;
+}
+

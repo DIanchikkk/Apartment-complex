@@ -1,0 +1,76 @@
+.zoneSections {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 40px 200px 0px;
+  }
+  
+  .zoneSection {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .zoneSection__header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0 10px 20px;
+  }
+  
+  .zoneSection__logo {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+  }
+  
+  .zoneSection__title {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "TT Travels Bold";
+    margin: 0;
+  }
+  
+  .zoneSection__starItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+  
+  .zoneSection__starItem {
+    font-family: "Helvetica Neue";
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #F7F1E9;
+    padding: 6px 10px;
+    color: #1A1A1A;
+    border-radius: 6px;
+  }
+  
+  .zoneSection__starIcon {
+    margin-top: -6px; 
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+  
+  .zoneSection__images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+  }
+  
+  .zoneSection__image {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  

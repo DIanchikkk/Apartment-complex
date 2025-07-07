@@ -6,6 +6,7 @@ import ComplexFeatures from './components/ComplexFeatures/ComplexFeatures';
 import ViewSlider from './components/ViewSlider/ViewSlider';
 import PresentationSignUpForm from './components/PresentationSignUpForm/PresentationSignUpForm';
 import BuildingClusters from './components/BuildingClusters/BuildingClusters';
+import ZoneSection from './components/ZoneSection/ZoneSection';
 
 
 function App() {
@@ -26,6 +27,10 @@ function App() {
       <div className="page__clusters">
         <h3 className="page__clusters-title">Жилой комплекс состоит <br/> из двух кластеров</h3>
         <BuildingClusters/>
+      </div>
+      <div className='page__zones'>
+        <h4 className='page__zones-title'>Современная эстетика лобби</h4>
+        <ZoneSection/>
       </div>
 
   

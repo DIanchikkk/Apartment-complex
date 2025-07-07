@@ -1,49 +1,56 @@
-  /* Hero Section */
-  
-  .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    text-align: center;
-  }
-  
-  .hero__content {
-    max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .hero__logo {
-    max-width: 214px;
-    max-height: 40px;
-    display: block;
-  }
-  
-  .hero__title {
-    font-size: 54px;
-    font-weight: 900;
-    color: #222;
-    font-family: 'TT Travels Bold';
-    margin: 0;
-  }
-  
-  .hero__subtitle {
-    font-size: 24px;
-    color:#1A1A1A;
-    display: block;
-    margin: 0;
-    font-family: 'Helvetica Neue';
-    position: relative;
-  }
-  
-  .hero__underline {
-    width: 610px;
-    height: 2px;
-    background-color: #A0A747;
-    position: absolute;
-    bottom: 240px;
-  }
-  
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+}
+
+.hero__content {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero__logo {
+  max-width: 214px;
+  max-height: 40px;
+  display: block;
+}
+
+.hero__title {
+  font-size: 54px;
+  font-weight: 900;
+  color: #222;
+  font-family: 'TT Travels Bold';
+  margin: 0;
+}
+
+.hero__subtitle-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero__subtitle {
+  font-size: 24px;
+  color: #1A1A1A;
+  margin: 0;
+  font-family: 'Helvetica Neue';
+  position: relative;
+}
+
+.hero__underline {
+  display: block;
+  width: 100%; 
+  max-width: 600px;
+  height: auto;
+  position: absolute;
+  z-index: 10;
+  bottom: 36%;
+
+}

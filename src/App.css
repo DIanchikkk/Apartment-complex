@@ -25,5 +25,40 @@
     margin-top: 100px;
     width: 100%;
 }
+.page__highlights-title { 
+    font-size: 54px;
+    color: #1A1A1A;
+    font-family: 'TT travels bold';
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-top: 100px;
+    width: 100%;
+    position: relative; }
+
+ .page__highlighted-text {
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    color: #1A1A1A;
+      }
+      
+  
+ .page__highlighted-line {
+    position: absolute;
+    bottom: -8px; /* регулируй отступ вниз */
+    left: 0;
+    width: 100%; /* растягивается под весь текст */
+    height: auto; /* или убери вообще */
+    pointer-events: none;
+  }
+  
+  
+    
+      
+
+
+  
+
 
 

@@ -1,14 +1,17 @@
 @font-face {
-    font-family: 'TT travels bold';
-    src: url("../../assets/tt_travels/bold.otf");
-  }
+  font-family: 'TT Travels Bold';
+  src: url('../../assets/TT/TTTravels-Bold.woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
   
   .view-slider__title {
     font-size: 54px;
     font-weight: 700;
     text-align: center;
     margin-top: 60px;
-    font-family: 'TT travels bold';
+    font-family: 'TT Travels Bold';
     color: #1a1a1a;
     user-select: none;
   }
@@ -44,7 +47,7 @@
     align-items: center;
     gap: 16px;
     z-index: 20;
-    font-family: 'TT travels', sans-serif;
+    font-family: 'TT Travels Bold';
     bottom: 3%;
     padding-bottom: 8px; 
   }

@@ -1,14 +1,16 @@
 @font-face {
-  font-family: 'TT travels';
-  src: url('/assets/tt_travels/TT.otf');
+  font-family: 'TT Travels Bold';
+  src: url('../../assets/TT/TTTravels-Bold.woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-  font-family: 'TT travels bold';
-  src: url('/assets/tt_travels/bold.otf');
-}
-@font-face {
-  font-family: 'helvetica';
-  src: url('/assets/helvetica/Helvetica.otf');
+  font-family: 'Helvetica Neue';
+  src: url('../../assets/helveticaa/HelveticaNeue-Thin.woff');
+  font-style: normal;
+  font-display: swap;
 }
 
 .container {
@@ -55,7 +57,7 @@
   color: #773844;
   margin-bottom: 8px;
   text-transform: uppercase;
-  font-family: 'TT travels bold';
+  font-family: 'TT Travels Bold';
   text-align: center;
 
 }
@@ -64,7 +66,7 @@
   font-size: 35px;
   font-weight: bold;
   color: #1a1a1a;
-  font-family: 'TT travels bold';
+  font-family: 'TT Travels Bold';
   margin: 0;
   padding: 0;
   white-space: nowrap;         
@@ -76,7 +78,7 @@
   align-items: center;
   font-size: 16px;
   color: #1a1a1a;
-  font-family: 'helvetica';
+  font-family: 'Helvetica Neue';
   min-width: 100px;
   margin-bottom: 20px;
 }
@@ -107,7 +109,7 @@
   font-size: 14px;
   margin-bottom: 6px;
   color: #1A1A1A;
-  font-family: 'helvetica';
+  font-family: 'Helvetica Neue';
 }
 
 .inputGroup {
@@ -162,7 +164,7 @@
 .agreement {
   font-size: 12px;
   color: #646562;
-  font-family: 'helvetica';
+  font-family: 'Helvetica Neue';
 
 }
 
@@ -218,7 +220,7 @@
 .name {
   font-size: 16px;
   color: #ffffff;
-  font-family: 'TT travels bold';
+  font-family: 'TT Travels Bold';
   line-height: 1.1;
   margin-bottom: 4px;
 
@@ -227,7 +229,7 @@
 .role {
   font-size: 14px;
   color: #ddd;
-  font-family: 'helvetica';
+  font-family: 'Helvetica Neue';
   line-height: 1.2;
   margin-top: 0;
 }

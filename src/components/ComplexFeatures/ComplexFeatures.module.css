@@ -1,13 +1,18 @@
   
-   
 @font-face {
-    font-family: 'TT travels';
-    src: url("../../assets/tt_travels/TT.otf");
-  }
+  font-family: 'TT Travels';
+  src: url('../../assets/TT/TTTravels-Regular.woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
   @font-face {
-    font-family: 'helvetica';
-    src: url('../../assets/helvetica/Helvetica.otf');
+    font-family: 'Helvetica Neue';
+    src: url('../../assets/helveticaa/HelveticaNeue-Thin.woff');
+    font-style: normal;
+    font-display: swap;
   }
+    
 
   /* ComplexFeatures */
 
@@ -41,7 +46,7 @@
     left: 16px;
     color: #FFFFFF;
     text-shadow: 0 0 5px rgba(0,0,0,0.7);
-    font-family: 'TT travels';
+    font-family: 'TT Travels';
   }
   
   .features__main {
@@ -53,7 +58,7 @@
     padding: 4px 16px;
     max-width: 118px;
     border-radius: 5px;
-    font-family: 'TT travels';
+    font-family: 'TT Travels';
   }
   
   .features__sub {
@@ -63,6 +68,6 @@
     backdrop-filter: blur(6px);
     padding: 6px 14px;
     border-radius: 5px;
-    font-family: 'helvetica';
+    font-family: 'Helvetica Neue';
   }
   

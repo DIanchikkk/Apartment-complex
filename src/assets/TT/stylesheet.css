@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'TT Travels';
+    src: url('TTTravels-Regular.woff2') format('woff2'),
+        url('TTTravels-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Travels Bold';
+    src: url('TTTravels-Bold.woff2') format('woff2'),
+        url('TTTravels-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

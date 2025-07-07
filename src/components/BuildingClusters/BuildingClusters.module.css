@@ -1,7 +1,9 @@
 @font-face {
-    font-family: 'helvetica';
-    src: url('/assets/helvetica/Helvetica.otf');
-  }
+  font-family: 'Helvetica Neue';
+  src: url('../../assets/helveticaa/HelveticaNeue-Thin.woff');
+  font-style: normal;
+  font-display: swap;
+}
   
   .clusters {
     display: flex;
@@ -64,7 +66,7 @@
   }
   
   .clusters__description {
-    font-family: 'helvetica';
+    font-family: 'Helvetica Neue';
     font-size: 18px;
     margin: 0;
     display: flex;
@@ -112,7 +114,7 @@
   
   .clusters__hint {
     position: absolute;
-    font-family: 'helvetica';
+    font-family: 'Helvetica Neue';
     bottom: 1%;
     left: 30%;
     padding: 8px 12px;
@@ -123,6 +125,7 @@
   }
   
   .nav-button {
+    font-family: 'Helvetica Neue';
     position: absolute;
     top: 60%;
     transform: translateY(-50%);

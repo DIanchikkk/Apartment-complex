@@ -1,12 +1,17 @@
- @font-face {
-    font-family: 'TT travels bold';
-    src: url("../../assets/tt_travels/bold.otf");
-  }
-  @font-face {
-    font-family: 'helvetica';
-    src: url('../../assets/helvetica/Helvetica.otf');
-  }
+@font-face {
+  font-family: 'TT Travels Bold';
+  src: url('../../assets/TT/TTTravels-Bold.woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 
+  @font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../../assets/helveticaa/HelveticaNeue-Thin.woff');
+    font-style: normal;
+    font-display: swap;
+  }
   /* Hero Section */
   
   .hero {
@@ -35,7 +40,7 @@
     font-size: 54px;
     font-weight: 900;
     color: #222;
-    font-family: 'TT travels bold';
+    font-family: 'TT Travels Bold';
     margin: 0;
   }
   
@@ -44,7 +49,7 @@
     color:#1A1A1A;
     display: block;
     margin: 0;
-    font-family: 'helvetica';
+    font-family: 'Helvetica Neue';
     position: relative;
   }
   

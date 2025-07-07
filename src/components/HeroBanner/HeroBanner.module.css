@@ -1,9 +1,11 @@
 
 @font-face {
-    font-family: 'TT travels';
-    src: url("../../assets/tt_travels/TT.otf");
-  }
-
+  font-family: 'TT Travels';
+  src: url('../../assets/TT/TTTravels-Regular.woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 /* HeroBanner */
 
 .hero-banner {
@@ -51,7 +53,7 @@
   .hero-banner__badge-text {
     font-size: 16px;
     color:#1A1A1A;
-    font-family: 'TT travels';
+    font-family: 'TT Travels';
     text-align: center;
   }
   
@@ -74,7 +76,7 @@
     font-weight: 500;
     max-width: 164px;
     max-height: 24px;
-    font-family: 'TT travels';
+    font-family: 'TT Travels';
   }
   .hero-banner__year {
     color: #A0A747;

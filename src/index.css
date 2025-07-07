@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/src/assets/helveticaa/HelveticaNeue-Thin.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Travels';
+  src: url('/src/assets/TT/TTTravels-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Travels Bold';
+  src: url('/src/assets/TT/TTTravels-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: #F5F3F0;
+}
+

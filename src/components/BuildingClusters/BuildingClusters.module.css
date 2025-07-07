@@ -1,11 +1,4 @@
-@font-face {
-  font-family: 'Helvetica Neue';
-  src: url('../../assets/helveticaa/HelveticaNeue-Thin.woff');
-  font-style: normal;
-  font-display: swap;
-}
-  
-  .clusters {
+   .clusters {
     display: flex;
     flex-direction: column;
     margin: 0 auto;

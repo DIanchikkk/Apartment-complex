@@ -1,11 +1,4 @@
-@font-face {
-  font-family: 'TT Travels Bold';
-  src: url('../../assets/TT/TTTravels-Bold.woff2');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-  
+
   .view-slider__title {
     font-size: 54px;
     font-weight: 700;

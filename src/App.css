@@ -46,10 +46,10 @@
   
  .page__highlighted-line {
     position: absolute;
-    bottom: -8px; /* регулируй отступ вниз */
+    bottom: -8px; 
     left: 0;
-    width: 100%; /* растягивается под весь текст */
-    height: auto; /* или убери вообще */
+    width: 100%; 
+    height: auto; 
     pointer-events: none;
   }
   

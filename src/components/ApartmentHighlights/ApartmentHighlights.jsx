@@ -12,8 +12,8 @@ const highlights = [
     title: (
       <>
         Свободная планировка, возможность объединить квартиры 
-        до <span className={styles['apartment-highlights__underline-wrapper']}>
-          500 м²
+        до  <span className={styles['apartment-highlights__underline-wrapper']}>
+           500 м²
           <svg
             className={styles['apartment-highlights__underline']}
             width="182"

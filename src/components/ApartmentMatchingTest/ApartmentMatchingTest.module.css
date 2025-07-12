@@ -1,0 +1,70 @@
+.test {
+    position: relative;
+    background-color: #A0A747; /* Зелёный фон */
+    padding: 50px;
+    height: 400px;
+    width: 800px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 12px;
+  }
+  
+  .test__content {
+    max-width: 550px;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .test__title {
+    font-family: 'TT Travels';
+    font-size: 45px;
+    color: #FFFFFF;
+    margin: 0;
+    margin-top: 40px;
+  }
+  
+  .test__subtitle {
+    font-size: 24px;
+    color: #FFFFFF;
+    font-family: 'TT Travels';
+  }
+  
+  .test__button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 14px 0px;
+    width: 150px;
+    margin: 10px auto;
+    font-size: 20px;
+    font-family: 'Helvetica Neue';
+    cursor: pointer;
+    border-radius: 12px;
+    transition: 0.3s ease;
+  }
+  
+  .test__button:hover {
+    opacity: 0.8;
+  }
+  
+  .test__svg-left,
+  .test__svg-right {
+    position: absolute;
+    bottom: 0;
+    width: 450px; 
+    height: auto;
+    z-index: 10;
+  }
+  
+  .test__svg-left {
+    left: 0;
+  }
+  
+  .test__svg-right {
+    right: 0;
+  }
+  

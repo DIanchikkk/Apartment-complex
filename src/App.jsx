@@ -12,7 +12,8 @@ import ZoneSection from './components/ZoneSection/ZoneSection';
 import ApartmentHighlights from './components/ApartmentHighlights/ApartmentHighlights';
 import ApartmentMatchingTest from './components/ApartmentMatchingTest/ApartmentMatchingTest';
 import TestPage from './components/ApartmentMatchingTest/TestPage';
-
+import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
+import FinishingModule from './components/FinishingModule/FinishingModule';
 function HomePage() {
   return (
     <div className="page">
@@ -73,6 +74,7 @@ function HomePage() {
       <div className="page__test">
         <ApartmentMatchingTest />
       </div>
+      <FinishingModule />
     </div>
   );
 }
@@ -82,11 +84,17 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/test" element={<TestPage />} />
+        <Route 
+          path="/test" 
+          element={
+            <ErrorBoundary>
+              <TestPage />
+            </ErrorBoundary>
+          } 
+        />
       </Routes>
     </Router>
   );
 }
 
 export default App;
-

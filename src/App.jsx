@@ -14,6 +14,7 @@ import ApartmentMatchingTest from './components/ApartmentMatchingTest/ApartmentM
 import TestPage from './components/ApartmentMatchingTest/TestPage';
 import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
 import FinishingModule from './components/FinishingModule/FinishingModule';
+import LightDarkDesign from './components/LightDarkDesign /LightDarkDesign';
 function HomePage() {
   return (
     <div className="page">
@@ -75,6 +76,7 @@ function HomePage() {
         <ApartmentMatchingTest />
       </div>
       <FinishingModule />
+      <LightDarkDesign />
     </div>
   );
 }

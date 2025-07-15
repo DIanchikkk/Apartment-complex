@@ -1,0 +1,107 @@
+.light-dark-design {
+    max-width: 1200px;
+    margin: 40px 100px;
+    padding: 40px;
+}
+
+.light-dark-design__title {
+    font-size: 54px;
+    font-weight: 700;
+    margin: 0 0 50px 0;
+    text-align: center;
+    color: #1A1A1A;
+    font-family: 'TT Travels Bold', sans-serif;
+}
+
+.light-dark-design__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    margin: 50px 0 10px 0;
+}
+
+.light-dark-design__block-title {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'TT Travels Bold', sans-serif;
+    color: #1A1A1A;
+    margin: 10px;
+}
+
+.button {
+    background-color: #773844;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    width: 250px;
+    position: absolute;
+    z-index: 100;
+    left: 29%;
+}
+
+.light-dark-design__download-button {
+    background-color: #773844;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    width: 250px;
+}
+
+.light-dark-design__download-button:hover {
+    background-color: #646562;
+}
+
+.light-dark-design__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    grid-gap: 16px;
+    padding: 0 24px;
+}
+
+.light-dark-design__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Позиционирование изображений в сетке */
+.light-dark-design__gallery img:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.light-dark-design__gallery img:nth-child(2) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.light-dark-design__gallery img:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.light-dark-design__gallery img:nth-child(4) {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+.light-dark-design__line {
+    height: 2px;
+    background-color: #EAE3D9;
+    margin: 50px 24px;
+}

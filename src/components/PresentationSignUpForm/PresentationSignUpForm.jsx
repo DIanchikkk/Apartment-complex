@@ -66,7 +66,6 @@ function PresentationSignUpForm() {
               alt="Алена Кирющенко"
               className={styles.person}
             />
-            {/* Теперь внутри imageWrapper */}
             <div className={styles.personInfo}>
               <p className={styles.name}>Алена <br/> Кирющенко</p>
               <p className={styles.role}>ведущий эксперт <br/>  по недвижимости  <br/> в ESTES</p>

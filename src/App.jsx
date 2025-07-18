@@ -89,9 +89,9 @@ function App() {
         <Route 
           path="/test" 
           element={
-            <ErrorBoundary>
+            // <ErrorBoundary>
               <TestPage />
-            </ErrorBoundary>
+            // </ErrorBoundary>
           } 
         />
       </Routes>

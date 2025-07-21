@@ -1,57 +1,152 @@
-  /* ComplexFeatures */
+/* ComplexFeatures */
 
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.features__item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.features__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.features__label {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  color: #FFFFFF;
+  text-shadow: 0 0 5px rgba(0,0,0,0.7);
+  font-family: 'TT Travels';
+}
+
+.features__main {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 2px;
+  background-color: #00000099;
+  backdrop-filter: blur(6px);
+  padding: 4px 16px;
+  max-width: 118px;
+  border-radius: 5px;
+  font-family: 'TT Travels';
+}
+
+.features__sub {
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #00000099;
+  backdrop-filter: blur(6px);
+  padding: 6px 14px;
+  border-radius: 5px;
+  font-family: 'Helvetica Neue';
+}
+
+/* Адаптив */
+
+@media (max-width: 1199px) {
   .features {
-    display: grid;
+    max-width: 900px;
+    padding: 16px;
+    gap: 10px;
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
   }
-  
-  .features__item {
-    position: relative;
-    border-radius: 8px;
-    overflow: hidden;
-    cursor: default;
-  }
-  
+
   .features__image {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    border-radius: 12px;
+    height: 200px;
+    border-radius: 10px;
   }
-  
+
   .features__label {
-    position: absolute;
-    bottom: 16px;
-    left: 16px;
-    color: #FFFFFF;
-    text-shadow: 0 0 5px rgba(0,0,0,0.7);
-    font-family: 'TT Travels';
+    bottom: 12px;
+    left: 12px;
   }
-  
+
   .features__main {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 2px;
-    background-color: #00000099;
-    backdrop-filter: blur(6px);
-    padding: 4px 16px;
-    max-width: 118px;
-    border-radius: 5px;
-    font-family: 'TT Travels';
+    font-size: 16px;
+    padding: 3px 12px;
+    max-width: 110px;
   }
-  
+
   .features__sub {
-    font-size: 14px;
-    font-weight: 400;
-    background-color: #00000099;
-    backdrop-filter: blur(6px);
-    padding: 6px 14px;
-    border-radius: 5px;
-    font-family: 'Helvetica Neue';
+    font-size: 13px;
+    padding: 5px 12px;
   }
-  
+}
+
+@media (max-width: 768px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 25px;
+  }
+
+  .features__image {
+    height: 160px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .features__label {
+    bottom: 8px;
+    left: 8px;
+  }
+
+  .features__main {
+    font-size: 13px;
+    padding: 3px 10px;
+    max-width: 100px;
+  }
+
+  .features__sub {
+    font-size: 11px;
+    padding: 2px 4px;
+  }
+}
+
+@media (max-width: 479px) {
+  .features {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 6px;
+  }
+
+  .features__image {
+    height: 100px;
+    width: auto; 
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .features__label {
+    bottom: 6px;
+    left: 6px;
+  }
+
+  .features__main {
+    font-size: 10px;
+    padding: 2px 5px;
+    max-width: 90px;
+    text-align: center;
+  }
+
+  .features__sub {
+    font-size: 8px;
+    padding: 2px 6px;
+    text-align: left;
+  }
+}

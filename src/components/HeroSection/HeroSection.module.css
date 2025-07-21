@@ -27,6 +27,7 @@
   color: #222;
   font-family: 'TT Travels Bold';
   margin: 0;
+  line-height: 1.2;
 }
 
 .hero__subtitle-wrapper {
@@ -34,6 +35,7 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  position: relative;
 }
 
 .hero__subtitle {
@@ -46,11 +48,81 @@
 
 .hero__underline {
   display: block;
-  width: 100%; 
+  width: 100%;
   max-width: 600px;
   height: auto;
   position: absolute;
   z-index: 10;
-  bottom: 36%;
+  top: 20px; 
+}
 
+/* Адаптив */
+
+@media (max-width: 1199px) {
+  .hero {
+    padding: 40px;
+  }
+
+  .hero__title {
+    font-size: 44px;
+  }
+
+  .hero__subtitle {
+    font-size: 20px;
+  }
+
+  .hero__logo {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 30px 20px;
+  }
+
+  .hero__title {
+    font-size: 34px;
+  }
+
+  .hero__subtitle {
+    font-size: 18px;
+  }
+
+  .hero__logo {
+    max-width: 150px;
+  }
+
+  .hero__underline {
+    top: 15px;
+  }
+}
+
+@media (max-width: 479px) {
+  .hero {
+    padding: 20px 16px;
+  }
+
+  .hero__title {
+    font-size: 20px;
+    line-height: 1.1;
+    max-height: 35px;
+  }
+
+  .hero__subtitle {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .hero__logo {
+    max-width: 120px;
+    margin-top: 12px;
+  
+  }
+
+  .hero__underline {
+    width: 100%;
+    height: auto;
+    top: 10px;
+  }
 }

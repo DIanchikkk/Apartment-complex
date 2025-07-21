@@ -138,3 +138,151 @@
     color: #fff;
   }
   
+  /* Адаптив */
+
+@media (max-width: 1199px) {
+  .light-dark-design {
+    margin: 40px 40px;
+    padding: 30px;
+  }
+
+  .light-dark-design__title {
+    font-size: 44px;
+    margin-bottom: 40px;
+  }
+
+  .light-dark-design__block-title {
+    font-size: 30px;
+  }
+
+  .light-dark-design__download-button {
+    font-size: 15px;
+    width: 220px;
+  }
+
+  .light-dark-design__gallery {
+    grid-template-rows: repeat(2, 220px);
+    grid-gap: 14px;
+  }
+
+  .light-dark-design__info-image {
+    width: 90px;
+  }
+
+  .light-dark-design__info-caption,
+  .light-dark-design__info-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .light-dark-design {
+    margin: 30px 20px;
+    padding: 20px;
+  }
+
+  .light-dark-design__title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .light-dark-design__block-title {
+    font-size: 26px;
+    margin-left: 20px;
+  }
+
+  .light-dark-design__download-button {
+    font-size: 14px;
+    width: 200px;
+    padding: 10px 16px;
+    height: auto;
+    margin: 10px 20px;
+  }
+
+  .light-dark-design__gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 16px;
+  }
+
+  .light-dark-design__gallery > * {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+
+  .light-dark-design__img {
+    height: 200px;
+  }
+
+  .light-dark-design__info {
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .light-dark-design__info-caption,
+  .light-dark-design__info-text {
+    font-size: 13px;
+  }
+
+  .light-dark-design__info-image {
+    width: 80px;
+  }
+
+  .light-dark-design__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0 0;
+  }
+
+  .light-dark-design__line {
+    margin: 40px 0;
+  }
+}
+
+@media (max-width: 479px) {
+  .light-dark-design {
+    margin: 20px 10px;
+    padding: 16px;
+  }
+
+  .light-dark-design__title {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .light-dark-design__block-title {
+    font-size: 22px;
+    margin-left: 20px;
+  }
+
+  .light-dark-design__download-button {
+    font-size: 13px;
+    width: 50%;
+    padding: 10px 14px;
+    margin-left: 20px;
+  }
+
+  .light-dark-design__gallery {
+    grid-gap: 12px;
+  }
+
+  .light-dark-design__img {
+    height: 180px;
+    border-radius: 4px;
+  }
+
+  .light-dark-design__info {
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .light-dark-design__info-caption,
+  .light-dark-design__info-text {
+    font-size: 12px;
+  }
+
+  .light-dark-design__info-image {
+    width: 70px;
+  }
+}

@@ -1,70 +1,148 @@
 .test {
-    position: relative;
-    background-color: #A0A747;
-    padding: 50px;
-    height: 400px;
-    width: 800px;
-    text-align: center;
-    overflow: hidden;
-    margin: 0 auto;
-    border-radius: 12px;
+  position: relative;
+  background-color: #A0A747;
+  padding: 50px;
+  height: 400px;
+  width: 800px;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.test__content {
+  max-width: 550px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.test__title {
+  font-family: 'TT Travels';
+  font-size: 45px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-top: 40px;
+}
+
+.test__subtitle {
+  font-size: 24px;
+  color: #FFFFFF;
+  font-family: 'TT Travels';
+}
+
+.test__button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 14px 0px;
+  width: 150px;
+  margin: 10px auto;
+  font-size: 20px;
+  font-family: 'Helvetica Neue';
+  cursor: pointer;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.test__button:hover {
+  opacity: 0.8;
+}
+
+.test__svg-left,
+.test__svg-right {
+  position: absolute;
+  bottom: 0;
+  width: 450px;
+  height: auto;
+  z-index: 10;
+}
+
+.test__svg-left {
+  left: 0;
+}
+
+.test__svg-right {
+  right: 0;
+}
+
+/* Адаптив */
+
+@media (max-width: 1199px) {
+  .test {
+    width: 70%;
+    padding: 40px;
   }
-  
-  .test__content {
-    max-width: 550px;
-    margin: 0 auto;
-    z-index: 1;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
-  
+
   .test__title {
-    font-family: 'TT Travels';
-    font-size: 45px;
-    color: #FFFFFF;
-    margin: 0;
-    margin-top: 40px;
+    font-size: 38px;
   }
-  
+
   .test__subtitle {
-    font-size: 24px;
-    color: #FFFFFF;
-    font-family: 'TT Travels';
-  }
-  
-  .test__button {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    padding: 14px 0px;
-    width: 150px;
-    margin: 10px auto;
     font-size: 20px;
-    font-family: 'Helvetica Neue';
-    cursor: pointer;
-    border-radius: 12px;
-    transition: 0.3s ease;
   }
-  
-  .test__button:hover {
-    opacity: 0.8;
-  }
-  
+
   .test__svg-left,
   .test__svg-right {
-    position: absolute;
-    bottom: 0;
-    width: 450px; 
-    height: auto;
-    z-index: 10;
+    width: 450px;
   }
-  
-  .test__svg-left {
-    left: 0;
+}
+
+@media (max-width: 768px) {
+  .test {
+    padding: 30px;
+    border-radius: 10px;
+    width: 77%;
+    height: 300px;
   }
-  
+
+  .test__title {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+
+  .test__subtitle {
+    font-size: 18px;
+  }
+
+  .test__button {
+    width: 30%;
+    padding: 12px 0;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .test__svg-left,
   .test__svg-right {
-    right: 0;
+    width: 300px;
   }
-  
+}
+
+@media (max-width: 479px) {
+  .test {
+    padding: 24px 16px;
+    width: 70%;
+    height: 210px;
+    border-radius: 8px;
+  }
+
+  .test__title {
+    font-size: 20px;
+  }
+
+  .test__subtitle {
+    font-size: 12px;
+  }
+
+  .test__button {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+
+  .test__svg-left,
+  .test__svg-right {
+    width: 180px;
+  }
+}

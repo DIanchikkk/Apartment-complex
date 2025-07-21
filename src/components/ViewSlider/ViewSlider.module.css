@@ -1,109 +1,225 @@
+.view-slider__title {
+  font-size: 54px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 60px;
+  font-family: 'TT Travels Bold';
+  color: #1a1a1a;
+  user-select: none;
+}
 
+.view-slider__swiper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  position: relative;
+}
+
+.view-slider__image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 8px;
+  user-select: none;
+}
+
+.view-slider__overlay {
+  position: absolute;
+  left: 20%;
+  width: auto;
+  border-radius: 5px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  z-index: 20;
+  font-family: 'TT Travels Bold';
+  bottom: 3%;
+  padding-bottom: 8px;
+  padding: 5px 30px;
+}
+
+.overlay-tab-button {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  color: #FFFFFF99;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  user-select: none;
+}
+
+.overlay-tab-button::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.overlay-tab-button--active::after {
+  background-color: #A0A747;
+}
+
+.overlay-tab-button--active {
+  color: #FFFFFF;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  border: none;
+  color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  padding: 0;
+}
+
+.nav-button-prev {
+  left: 20px;
+}
+
+.nav-button:hover {
+  background-color: rgba(28, 23, 23, 0.172);
+}
+
+.nav-button-next {
+  right: 20px;
+}
+
+/* Адаптив */
+
+@media (max-width: 1199px) {
   .view-slider__title {
-    font-size: 54px;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 60px;
-    font-family: 'TT Travels Bold';
-    color: #1a1a1a;
-    user-select: none;
+      font-size: 44px;
+      margin-top: 40px;
   }
-  
-  .view-slider__swiper {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  .slide-wrapper {
-    position: relative;
-  }
-  
+
   .view-slider__image {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    border-radius: 8px;
-    user-select: none;
+      height: 500px;
   }
-  
-  .view-slider__overlay {
-    position: absolute;
-    left: 20%;
-    width: auto;
-    border-radius: 5px;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(6px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    z-index: 20;
-    font-family: 'TT Travels Bold';
-    bottom: 3%;
-    padding-bottom: 8px; 
-  }
-  
+
   .overlay-tab-button {
-    background-color: transparent;
-    position: relative;
-    border: none;
-    color:#FFFFFF99;
-    font-weight: 500;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 8px 20px;
-    border-radius: 20px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    user-select: none;
+      font-size: 14px;
+      padding: 6px 16px;
   }
-  
-  .overlay-tab-button::after {
-    content: "";
-    position: absolute;
-    bottom: -2px; 
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: transparent; 
-    transition: background-color 0.3s ease;
-  }
-  
-  .overlay-tab-button--active::after {
-    background-color: #A0A747;
-  }
-  .overlay-tab-button--active {
-    color:#FFFFFF;
-  }
- 
+
   .nav-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(6px);
-    border: none;
-    color: white;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    padding: 0;
+      width: 60px;
+      height: 60px;
   }
-  
+
   .nav-button-prev {
-    left: 20px;
+      left: 16px;
   }
-  .nav-button:hover {
-    background-color: rgba(28, 23, 23, 0.172);
-  }
-  
+
   .nav-button-next {
-    right: 20px;
+      right: 16px;
   }
-  
+}
+
+@media (max-width: 768px) {
+  .view-slider__title {
+      font-size: 32px;
+      margin-top: 30px;
+  }
+
+  .view-slider__image {
+      height: 350px;
+  }
+
+  .view-slider__overlay {
+      bottom: 4%;
+      left: 15%;
+      gap: 12px;
+      padding: 5px 20px;
+      height: auto;
+      flex-wrap: wrap;
+  }
+
+  .overlay-tab-button {
+      font-size: 13px;
+      padding: 6px 12px;
+      border-radius: 16px;
+  }
+
+  .nav-button {
+      width: 50px;
+      height: 50px;
+  }
+
+  .nav-button svg {
+      width: 16px;
+      height: 16px;
+  }
+
+  .nav-button-prev {
+      left: 10px;
+  }
+
+  .nav-button-next {
+      right: 10px;
+  }
+}
+
+@media (max-width: 479px) {
+  .view-slider__title {
+      font-size: 24px;
+      margin-top: 20px;
+  }
+
+  .view-slider__image {
+      height: 260px;
+      border-radius: 6px;
+  }
+
+  .view-slider__overlay {
+      display: none;
+  }
+
+  .overlay-tab-button {
+      font-size: 11px;
+      padding: 4px 10px;
+  }
+
+  .nav-button {
+      width: 36px;
+      height: 36px;
+  }
+
+  .nav-button svg {
+      width: 10px;
+      height: 10px;
+  }
+
+  .nav-button-prev {
+      left: 8px;
+  }
+
+  .nav-button-next {
+      right: 8px;
+  }
+}

@@ -1,4 +1,3 @@
- @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 /* header */
 .header {
@@ -6,6 +5,12 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px 40px;
+  flex-wrap: wrap;
+}
+
+.header__left,
+.header__right {
+  flex: 1 1 50%;
 }
 
 .header__left {
@@ -13,15 +18,12 @@
   align-items: center;
   gap: 20px;
   max-width: 329px;
-  max-height: 34px;
   font-family: 'Helvetica Neue';
-
 }
 
-.headerLogo{
+.headerLogo {
   max-width: 157px;
   max-height: 32px;
-
 }
 
 .header__partner-wrapper {
@@ -34,39 +36,33 @@
 }
 
 .header__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   text-align: right;
   max-width: 140px;
   max-height: 38px;
-  display: flex;
-  flex-direction: column;
-
-
 }
 
 .header__phone {
   font-size: 16px;
-  font-weight: 500;
   color: #1A1A1A;
   font-family: 'TT Travels';
-  font-weight: 500;
-
 }
+
 .header__phone-layout {
-  width: 140px;
-  height: auto; 
-  border: 0.5px solid #000; 
-  opacity: 0.1; 
-  transform: rotate(0deg); 
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 2px 0;
 }
 
 .header__working-status {
   display: flex;
   align-items: center;
-  margin-left: 60px;
   gap: 5px;
   font-size: 16px;
   color: #A0A747;
-  margin-top: 2px;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
 }
@@ -76,5 +72,92 @@
   min-height: 4px;
   border-radius: 50%;
   background-color: #A0A747;
-  margin-top: 3px;
+}
+
+/* Адаптив */
+
+@media (max-width: 1199px) {
+  .header {
+    padding: 20px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 16px;
+  }
+
+  .header__left,
+  .header__right {
+    flex: 1 1 50%;
+  }
+
+  .header__left {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .headerLogo {
+    max-width: 120px;
+  }
+
+  .header__partner-wrapper {
+    font-size: 12px;
+  }
+
+  .header__phone {
+    font-size: 12px;
+  }
+
+  .header__working-status {
+    font-size: 12px;
+  }
+
+  .header__phone-layout {
+    width: 78%;
+    margin: 4px 0;
+  }
+   
+.header__right {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.8;
+}
+}
+
+@media (max-width: 479px) {
+  .header {
+    padding: 8px;
+  }
+
+  .headerLogo {
+    max-width: 90px;
+  }
+
+  .header__partner-wrapper {
+    font-size: 9px;
+  }
+
+  .header__left {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .header__phone {
+    font-size: 9px;
+  }
+
+  .header__working-status {
+    font-size: 9px;
+  }
+
+  .header__right {
+    margin-top: 5px;
+  }
+  .header__phone-layout {
+    width: 55%;
+    margin: 3px 0;
+  }
 }
